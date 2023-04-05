@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        //三元运算符
+        // 条件 ？ 代码段1 ： 代码段2
+        // 条件为真，执行代码段1，条件为假，执行代码段2
+        // console.log(3 > 5 ? `你说的对` : `你说的不对`);//输出结果 你说的不对
+        // let a = +prompt('请输入第一个数')
+        // let b = +prompt('请输入第二个数')
+        // // let c = a > b ? a : b
+        // // alert(`最大的数是${c}`)
+        // a > b ? alert(`最大的值是${a}`) : alert(`最大的值是${b}`)
+
+        //数字补0案例
+        // 用户输入
+        let num = +prompt("请输入数字")
+        // 判断输出
+        // num >= 10 ? alert(`您输入的数字是${num}`) : alert(`您输入的数字是0${num}`)
+        alert( num < 10 ? '0' + num : num)
+    </script>
+</body>
+
+</html>

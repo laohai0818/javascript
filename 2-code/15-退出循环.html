@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // let i = 1
+        // while (i < 5) { 
+        //     if (i === 3) { //对比值要是全等于  切记切记
+        //         break // 当i=3的时候，退出循环
+        //     }
+        //     document.write(i)
+        //     i++  // 这个不能忘记，否则会死循环
+        // }
+
+        // let a = 1
+        // while (a <= 10) {
+        //                 // 当a=3 或者 a=6 的时候，就是执行continue 
+        //     if (a === 3 || a === 6) { //对比值要是全等于  切记切记
+        //         a++   // 
+        //         continue // 结束当前循环，下方代码不再执行，所以a++要写在上面
+        //     }
+        //     document.write(a, '<br>')
+        //     a++
+        // }
+
+
+        // while(true){ //死循环
+        //     let ai = prompt('你爱我吗？') 
+        //     if(ai === '爱'){  //对比值要是全等于  切记切记
+        //         break
+        //     }
+        // }
+        // document.write('我也爱你')
+
+
+        // 开始循环 输入框写在循环里面
+        let money = 100 // 写在循环外面，否则每次循环都会重置
+        while (true) {
+            // 用户输入信息
+            let a = +prompt(`
+            请选择你的操作：
+                        1.存钱
+                        2.取钱
+                        3.查看余额
+                        4.退出
+            `)
+            // 如果用户输入的是 4  则退出循环
+            if (a === 4) { //对比值要是全等于  切记切记
+                break
+            }
+            switch (a) {
+                case 1:
+                    let cun = +prompt('请输入存钱金额')
+                    money = money + cun
+                    alert(`你存入了${cun}`)
+                    break
+                case 2:
+                    let qu = +prompt('请输入取钱金额')
+                    if (qu > money) {
+                        alert('余额不足')
+                        break
+                    }
+                    money = money - qu
+                    alert(`你取走了${qu}`)
+                    break
+                case 3:
+                    alert(`你余额为${money}`)
+                    break
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: inline-block;
+            width: 78px;
+            padding: 5px 10px;
+            border: 1px solid pink;
+            margin: 2px ;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px pink;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+
+        // 外层循环记录循环次数  外层打印 第N天
+        // 内层循环记录循环内容  内层打印 每天内容
+        // for(let a=1;a<=3;a++){
+        //     document.write(`第${a}天 <br>`)
+        //     for(let b=1;b<=5;b++){
+        //         document.write(`第${b}个单词 <br>`)
+        //     }
+        // }
+
+        // 打印五行五列的小星星
+        // let row = +prompt("你要打印几行")
+        // let col = +prompt("你要打印几列")
+        // for (let a = 1; a <= row; a++) {
+
+        //     for (let b = 1; b <= col; b++) {
+        //         document.write(' ♠ ')
+        //     }
+        //     document.write('<br>') // 内循环打印完毕在这个地方换行
+        // }
+
+        for(let a =1;a<=9;a++){
+            
+            for(let b=1;b<=a;b++){
+                let sum = a*b
+                document.write(`<span>${b} x ${a} = ${sum}</span>`)
+            }
+            document.write('<br>')
+        }
+    </script>
+</body>
+
+</html>

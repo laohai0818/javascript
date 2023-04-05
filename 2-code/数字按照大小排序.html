@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let arr = [5, 12, 4, 8, 3, 6, 2, 11, 1]
+        for (let i = 0; i < arr.length - 1; i++) {  // 两两对比，一共又多少个数，如果是2个数，那么对比一次，如果是3个数对比2次，一次类推。。。 所以需要循环的次数就是数组成员数-1
+            for (let j = 0; j < arr.length - i - 1; j++) { // 交换的次数，次数是从0开始的，假设我们的数组长度是5个，数组长度减去对比的第几次减去每次交换的次数-1（一次只能交换一个）就是我们需要交换的次数，如果是10次，那么我们只需要循环一次减一次就行
+                if (arr[j] > arr[j + 1]) {  // 如果第一个数大于第二个数才进行交换 j是第一个数，第二个数就是j+1，依次类推
+                    let temp = arr[j]//交换变量
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            height: 80px;
+            margin: 0 auto;
+            /* 合并表格单元线 */
+            border-collapse: collapse;
+            /* 表格内容居中 */
+            text-align: center;
+        }
+
+        table th,
+        table td {
+            /* 给表格内所有的格子添加内边距 */
+            /* 添加表格内边距 */
+            padding: 5px 30px;
+        }
+
+        /* 并集选择器 */
+        table,
+        th,
+        td {
+            /* 给表格设置边框 */
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let name = prompt('请输入你要购买的产品')
+        let price = +prompt('请输入你要购买的产品价格')
+        let nun = +prompt('请输入你要购买的产品数量')
+        let total = price * nun
+        let address = prompt('请输入你的收货地址')
+        document.write(`
+                <table>
+                    <h2>订单确认</h2>
+                    <tr>
+                        <th>商品名称</th>
+                        <th>商品价格</th>
+                        <th>商品数量</th>
+                        <th>总价</th>
+                        <th>收货地址</th>
+                    </tr>
+                    <tr>
+                        <td>${name}</td>
+                        <td>${price}元</td>
+                        <td>${nun}个</td>
+                        <td>${total}</td>
+                        <td>${address}</td>
+                    </tr>
+                </table>
+                `)
+    </script>
+</body>
+
+</html>

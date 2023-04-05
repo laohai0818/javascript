@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <script>
+
+        // //声明数组，
+        // let arr = [2, 6, 1, 7, 4]
+        // // 求和
+        // let sum = 0 //声明一个变量
+        // for (let i = 0; i < arr.length; i++) {
+        //     //遍历数组的每个成员
+        //     sum = sum + arr[i]  //遍历的数组元素加到声明的变量里
+        // }
+        // alert(sum / arr.length) // 计算结果打印输出
+
+        // 比较数组里面最大的值
+        // let arr = [88, 54, 52, 5, 41, 65]
+        // let max = arr[0]
+        // let min = arr[0]
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (max < arr[i]) {
+        //         max = arr[i]
+        //     } 
+        //     if (min > arr[i]) {
+        //         min = arr[i]
+        //     }
+        // }
+        // console.log(`最大的值是${max}`)
+        // console.log(`最小的值是${min}`)
+
+
+        // 数组元素的修改
+        // let arr =[]
+        // console.log(arr);
+        // arr[0]=1
+        // 数组的内容添加
+        // let arr=['aaa','bbb','ccc']
+        // for(let i =0 ; i<arr.length;i++){
+        //     arr[i]=arr[i]+'啊啊啊'
+        // }
+        // console.log(arr);
+
+        // //数组元素的新增
+        // let arr = ['pigs', 'goats', 'sheep'];
+
+        // let count = arr.push('cows');//向数组末尾添加新元素
+        // console.log(count);
+        // // Expected output: 4
+        // console.log(arr);
+        // // Expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+        // arr.push('chickens', 'cats', 'dogs');//向数组末尾添加多个新元素
+        // console.log(arr); // 返回新数组的长度
+        // // Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+
+        // // 在数组的前面添加元素
+        // const array1 = [1, 2, 3];
+
+        // console.log(array1.unshift(4, 5));
+        // // Expected output: 5
+
+        // console.log(array1);
+        // // Expected output: Array [4, 5, 1, 2, 3]
+
+        // // 筛选大于300的数组元素放进一个新的数组
+        // let arr=[456,145,245,4151,465,568,298]
+        // let arr1=[]
+        // for(let i=0;i<arr.length;i++){
+        //     if(arr[i]>=300){
+        //         arr1.push(arr[i])
+        //     }
+        // }
+        // console.log(arr1);
+
+        // 数组去0案例
+        let arr = [2, 0, 6, 1, 77, 0, 52, 0, 58, 8]
+        let newarr = []
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] !== 0) {
+                newarr.push(arr[i])
+            }
+        }
+        console.log(newarr)
+    </script>
+</body>
+
+</html>

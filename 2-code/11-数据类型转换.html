@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let num = 10
+        console.log(typeof num)
+        let str = 'pink'
+        console.log(typeof str)
+        // 数字加引号等于字符串型
+        let str1 = '10'
+        console.log(typeof str1)
+        let flag = false
+        console.log(typeof flag)
+        let nul
+        console.log(typeof nul)
+        console.log(typeof +"123"); // number 数据类型 不是字符串
+
+
+        // 隐式转换：
+        // 隐式转换数据类型  会把数字1自动转换为字符串
+        console.log('pink' + 1)
+        // 如果是数字加号“ + ”字符串数字默认也会转换给字符串
+        console.log(2 + '2') //22
+        // 如果是数字减号“ - ”字符串数字 默认会把字符串转换为数字
+        // 包括 “ -  *  /  ”  只有加号“ + ”不一样
+        console.log(2 - '2') // 0
+        // 加号如果放在数字字符串的前面，会把这个数字字符串转换为数字型
+        console.log(+'456' + 44); // 值为 500
+        //  任何数据和字符串相加 都是字符串型
+
+        // 显式转换
+        // 转换为number数据类型
+        let sstr = '123'
+        console.log(Number(sstr)) // 强制把字符串转换为数字类型
+
+        let numm = prompt('请输入年薪')
+        console.log(Number(numm)) //强制把用户输入到文本框里面的字符串转换为数字型
+
+        let nummm = Number( prompt('请输入年薪')) // 另外一种写法
+        let nummmm = +prompt('请输入年薪') // 这是隐式转换
+
+        console.log(parseInt('12px')) // 只取最前面的整数数字
+        console.log(parseInt('12.35px'))// 只取最前面的整数数字
+        console.log(parseInt('12.95px')) // 只取最前面整数，不会四舍五入
+
+        console.log(parseFloat('12px')) // 取最前面的数字
+        console.log(parseFloat('12.35px'))// 取最前面的数字包括小数
+        console.log(parseFloat('12.95px')) // 取最前面的数字包括小数，不会四舍五入
+
+        console.log(parseFloat('abc12.95px')) // 无法转换
+
+        let a = +prompt('请输入数字')
+        let b = +prompt('请输入数字')
+        document.write(a+b)
+
+
+    </script>
+</body>
+
+</html>
